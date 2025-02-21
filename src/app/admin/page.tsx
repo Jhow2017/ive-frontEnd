@@ -1,4 +1,4 @@
-'use cliet'
+'use client';
 
 import React, { useState, useEffect } from 'react';
 import * as echarts from 'echarts';
