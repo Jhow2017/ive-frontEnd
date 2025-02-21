@@ -7,6 +7,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/effect-fade';
 import * as echarts from 'echarts';
+import Image from 'next/image';
 
 const App: React.FC = () => {
     const [selectedFaq, setSelectedFaq] = useState<number | null>(null);
@@ -100,7 +101,7 @@ const App: React.FC = () => {
             <header className="fixed w-full bg-white shadow-md z-50">
                 <div className="max-w-7xl mx-auto px-4 h-20 flex items-center justify-between">
                     <div className="flex items-center space-x-8">
-                        <img
+                        <Image
                             src="https://public.readdy.ai/ai/img_res/df28edf5a91a8fa91b9fc8b7d634977f.jpg"
                             alt="Instituto Logo"
                             className="h-12"
@@ -196,7 +197,7 @@ const App: React.FC = () => {
                     <SwiperSlide>
                         <div className="relative h-full flex items-center overflow-hidden">
                             <div className="absolute inset-0">
-                                <img
+                                <Image
                                     src="https://public.readdy.ai/ai/img_res/8736af9e4257f36746111cb35862aae4.jpg"
                                     alt="Hero Background 1"
                                     className="w-full h-full object-cover"
@@ -224,7 +225,7 @@ const App: React.FC = () => {
                     <SwiperSlide>
                         <div className="relative h-full flex items-center overflow-hidden">
                             <div className="absolute inset-0">
-                                <img
+                                <Image
                                     src="https://public.readdy.ai/ai/img_res/287d6a0a8cf6ada648c92fb3328c42ce.jpg"
                                     alt="Hero Background 2"
                                     className="w-full h-full object-cover"
@@ -252,7 +253,7 @@ const App: React.FC = () => {
                     <SwiperSlide>
                         <div className="relative h-full flex items-center overflow-hidden">
                             <div className="absolute inset-0">
-                                <img
+                                <Image
                                     src="https://public.readdy.ai/ai/img_res/784f7318b921d99a613e3daaf5450c7e.jpg"
                                     alt="Hero Background 3"
                                     className="w-full h-full object-cover"
@@ -338,7 +339,7 @@ const App: React.FC = () => {
                             </button>
                         </div>
                         <div className="relative">
-                            <img
+                            <Image
                                 src="https://public.readdy.ai/ai/img_res/9ed2c8c3f5e61ea40521bd7485b61527.jpg"
                                 alt="Sobre o Instituto"
                                 className="rounded-lg shadow-xl"
@@ -373,7 +374,7 @@ const App: React.FC = () => {
                         <SwiperSlide>
                             <div className="bg-white rounded-lg p-8 shadow-lg">
                                 <div className="flex items-center mb-6">
-                                    <img
+                                    <Image
                                         src="https://public.readdy.ai/ai/img_res/2eb355ae44774969d75d494b1b41ed7e.jpg"
                                         alt="Paciente 1"
                                         className="w-16 h-16 rounded-full object-cover mr-4"
@@ -400,7 +401,7 @@ const App: React.FC = () => {
                         <SwiperSlide>
                             <div className="bg-white rounded-lg p-8 shadow-lg">
                                 <div className="flex items-center mb-6">
-                                    <img
+                                    <Image
                                         src="https://public.readdy.ai/ai/img_res/962cdb7f6599bcd3ff743b9dfacf30ce.jpg"
                                         alt="Paciente 2"
                                         className="w-16 h-16 rounded-full object-cover mr-4"
@@ -425,7 +426,7 @@ const App: React.FC = () => {
                         <SwiperSlide>
                             <div className="bg-white rounded-lg p-8 shadow-lg">
                                 <div className="flex items-center mb-6">
-                                    <img
+                                    <Image
                                         src="https://public.readdy.ai/ai/img_res/141ca1cd5c53efce8d7808a5831fde29.jpg"
                                         alt="Paciente 3"
                                         className="w-16 h-16 rounded-full object-cover mr-4"
@@ -490,7 +491,7 @@ const App: React.FC = () => {
                             </button>
                         </div>
                         <div className="relative">
-                            <img
+                            <Image
                                 src="https://public.readdy.ai/ai/img_res/604109ab5d17757874c63c18e9b81d71.jpg"
                                 alt="Parceria"
                                 className="rounded-lg shadow-xl"
@@ -621,7 +622,7 @@ const App: React.FC = () => {
                     >
                         {[1, 2, 3, 4, 5, 6].map((index) => (
                             <SwiperSlide key={index}>
-                                <img
+                                <Image
                                     src={`https://readdy.ai/api/search-image?query=modern minimalist medical company logo design professional healthcare business symbol on white background&width=200&height=100&orientation=landscape&flag=c9df8dad7a00f2a7699034b8419a6189`}
                                     alt={`Partner ${index}`}
                                     className="w-full h-24 object-contain"
@@ -720,7 +721,7 @@ const App: React.FC = () => {
                             </button>
                         </div>
                         <div className="relative">
-                            <img
+                            <Image
                                 src="https://public.readdy.ai/ai/img_res/8420024473446da74287989da55c92e2.jpg"
                                 alt="Donation Impact"
                                 className="rounded-lg shadow-xl"
@@ -798,7 +799,7 @@ const App: React.FC = () => {
                 <div className="max-w-7xl mx-auto px-4">
                     <div className="grid md:grid-cols-4 gap-8">
                         <div>
-                            <img
+                            <Image
                                 src="https://public.readdy.ai/ai/img_res/1015b57ff743d821d6774bd95255ec36.jpg"
                                 alt="Instituto Logo"
                                 className="h-12 mb-4"

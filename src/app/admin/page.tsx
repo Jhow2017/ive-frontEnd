@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import * as echarts from 'echarts';
+import Image from 'next/image';
 const App: React.FC = () => {
     const [selectedMenu, setSelectedMenu] = useState('dashboard');
     const [searchTerm, setSearchTerm] = useState('');
@@ -194,7 +195,7 @@ const App: React.FC = () => {
                                     }
                                     className="flex items-center space-x-2 !rounded-button"
                                 >
-                                    <img
+                                    <Image
                                         src="https://public.readdy.ai/ai/img_res/9a9bee18c7e7daa14717763c25bfadef.jpg"
                                         alt="Admin"
                                         className="w-8 h-8 rounded-full object-cover"
@@ -529,7 +530,7 @@ const App: React.FC = () => {
                                         key={index}
                                         className="flex items-center space-x-4 bg-gray-50 p-4 rounded-lg"
                                     >
-                                        <img
+                                        <Image
                                             src={profissional.foto}
                                             alt={profissional.nome}
                                             className="w-16 h-16 rounded-full object-cover"
@@ -1162,7 +1163,7 @@ const App: React.FC = () => {
                                 <div className="p-6">
                                     <div className="flex items-center space-x-6 mb-6">
                                         <div className="relative">
-                                            <img
+                                            <Image
                                                 src="https://public.readdy.ai/ai/img_res/c8b7568554cb95818ed56d65c330d71a.jpg"
                                                 alt="Profile"
                                                 className="w-32 h-32 rounded-full object-cover"
