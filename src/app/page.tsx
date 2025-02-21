@@ -7,7 +7,6 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/effect-fade';
 import * as echarts from 'echarts';
-import img from 'next/image';
 
 const App: React.FC = () => {
     const [selectedFaq, setSelectedFaq] = useState<number | null>(null);
